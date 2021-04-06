@@ -1,0 +1,33 @@
+.productive {
+    &__picture {
+    background-color:$color-primary-6;
+    grid-column: full-start / col-end 4;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    align-items: center;
+    @media only screen and (max-width:$bp-large) {
+       grid-column: 1 / -1;
+    }
+    }
+    &__img {
+        width:100%;
+        grid-row: 2 / 6;
+        grid-column: 2 / 6;
+}
+    &__text {
+        background-color:$color-primary-6;
+        grid-column: col-start 5 / full-end;
+        padding: 6rem 8vw;
+       display: grid;
+       align-content: center;
+       justify-items: start;
+       grid-row-gap:1.5rem;
+       @media only screen and (max-width:$bp-large) {
+        grid-column: 1 / -1;
+     }
+    }
+    &__paragraph {
+   font-size: 1.5rem;
+    }
+}

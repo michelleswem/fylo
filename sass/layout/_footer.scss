@@ -1,0 +1,99 @@
+.footer {
+    background-color:$color-primary-1;
+    grid-column: full-start / full-end;
+    padding:10rem 10rem; 
+}
+.footer-logo-box {
+margin-bottom:2rem;
+display: inline-block;
+    img {
+height: 4rem;
+width: auto;
+    }
+}
+.footer-boxes {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+grid-gap:7rem;
+}
+.footer-box-1 {
+display: flex;
+&__icon {
+   @include icon;
+   margin-right:1rem;
+   transform: translateY(-1rem);
+    }
+    &__text {
+      font-size:1.1rem;
+    }
+    
+}
+.footer-box-2 {
+&__box {
+display: flex;
+}
+ &__icon {
+        height: 2rem;
+        width: 2rem;
+        fill:$color-white; 
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+        }
+        &__num {
+          font-size: 1.3rem;         
+      }
+}
+.footer-box-3 {
+display: flex;
+@media only screen and (max-width:$bp-small){
+    flex-direction: column;
+     }
+
+ 
+&__list-1 {
+@extend %list;
+margin-right:5rem;
+@media only screen and (max-width:$bp-small){
+    margin-bottom: 5rem; 
+     }
+}
+&__item-1 {
+@extend %items;
+}
+
+&__link-1 {
+@extend %link;
+}
+
+&__list-2 {
+ @extend %list;
+}
+
+&__item-2 {
+    @extend %items;
+}
+
+&__link-2 {
+@extend %link;
+}
+}
+
+.footer-box-4 {
+    display: flex; 
+    @media only screen and (max-width:$bp-small){
+      justify-self: center;  
+       }
+&__icon {
+@include icon;
+border-radius:50%;
+border: 1px solid $color-white;
+padding: 1rem;
+&:not(:last-child) {      
+ margin-right: 2rem;
+    }
+}
+}
+
+
+
+

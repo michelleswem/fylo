@@ -1,0 +1,62 @@
+.access {
+    background-color:$color-primary-6;
+    grid-column: full-start / full-end;
+    display: grid;
+    grid-template-rows:min-content;
+    padding: 2rem 10rem;
+    padding-top: 10rem;
+    justify-items: center;
+    @media only screen and (max-width:$bp-small){
+      padding-left: 5rem;
+      padding-right: 5rem;
+       } 
+}
+.accesses {
+    display: grid;
+    align-items: center;
+    grid-template-rows: repeat(3, min-content);
+    grid-row-gap:2rem;
+   background-color: $color-dark-1;
+   text-align: center;
+     width: 70%;
+    z-index: 10;  
+    padding:1.5rem 3rem;
+    border-radius:1rem;
+    height: 120%;
+    @media only screen and (max-width:$bp-large){
+       width: 100%;  
+      }
+    &__text {
+font-size: 1.5rem;
+}
+    &__form {
+     display: flex; 
+     @media only screen and (max-width:$bp-large){
+       flex-direction: column;
+     }
+    }
+    &__input {
+        font-family: inherit;
+        font-size: 1.3rem;
+        color:$color-grey-light;
+        padding: 1.5rem 6rem;
+        border-radius: 100px;
+        border: none;
+        width: 60%;
+        margin-right:4rem;
+        @media only screen and (max-width:$bp-large){
+        margin-bottom: 3rem;
+        width: 100%;  
+          }
+        &:focus {
+            outline: none;
+            background-color:$color-white;
+        }
+    }
+    &__btn {
+        @media only screen and (max-width:$bp-large){
+           width:100%;
+              
+          }
+    }
+}

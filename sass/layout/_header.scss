@@ -1,0 +1,51 @@
+.header {
+background-color:$color-primary-6;
+grid-column: full-start / full-end;
+display: grid;
+grid-template-rows:1fr min-content;
+grid-row-gap:1rem;
+&__container {
+    display:flex;
+    justify-content: space-between; 
+}
+&__logo {
+height: 4rem;
+margin:3rem; 
+}
+&__nav {
+margin:3rem; 
+}
+&__list {
+display: grid;
+grid-template-columns: repeat(3, max-content);
+grid-column-gap:2rem;
+list-style: none;
+}
+
+&__link{
+    &:link,
+    &:visited {
+        font-size: 1.3rem;
+        text-decoration: none;
+        color:$color-white;
+    }
+}
+&__box {
+justify-self: center;
+display: grid;
+grid-template-rows:1fr repeat(3, min-content);
+grid-row-gap:1.5rem;
+justify-items: center;
+text-align: center;
+z-index:10;
+
+}
+&__img {
+width:100%;
+display: block;
+}
+&__text {
+font-size: 1.4rem;
+width: 43%;
+}
+}

@@ -1,0 +1,24 @@
+.heading-1 {
+font-size: 3rem;
+line-height: 1.2;
+width: 60%;
+@media only screen and (max-width:$bp-largest){
+    font-size: 1.5rem;    
+   }
+}
+.heading-2 {
+    font-size: 4rem;
+    @media only screen and (max-width:$bp-largest){
+        font-size: 2rem;   
+       }
+    line-height:1.2;  
+&--small {
+    font-size: 3rem;
+    @media only screen and (max-width:$bp-largest){
+        font-size:1.5rem;     
+       }
+}
+}
+.heading-3 {
+    font-size: 2rem;
+}

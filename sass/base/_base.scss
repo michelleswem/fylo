@@ -1,0 +1,38 @@
+// Project Definition
+* {
+    margin:0;
+    padding: 0;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%;   // 1rem = 10px
+    @media only screen and (max-width:$bp-largest) {
+        font-size: 50%;  // 1rem = 8px
+    }
+    box-sizing:border-box;
+}
+body {
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color:$color-white;
+}
+.container {
+    display: grid;
+    grid-template-rows: 100vh min-content 40vw repeat(3, min-content);
+    grid-template-columns: [full-start]minmax(6rem, 1fr)repeat(8,[col-start] minmax(min-content, 14rem)[col-end]) 
+  minmax(6rem, 1fr)[full-end];
+    margin: 0 auto;
+    @media only screen and (max-width:$bp-large) {
+    grid-template-rows: 100vh; 
+    } 
+
+    @media only screen and (max-width:$bp-small) {
+        grid-template-columns: [full-start] repeat(8,[col-start] minmax(min-content, 14rem)[col-end]) 
+    [full-end];
+        } 
+}

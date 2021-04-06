@@ -1,0 +1,12 @@
+// mixins
+@mixin icon {
+   height: 4rem;
+   width: 4rem;
+   fill:$color-white; 
+}
+
+// break points
+$bp-largest:75em; //1200px 
+$bp-large:62.5em; //1000pxe
+$bp-medium:50em; //800px
+$bp-small:37.5em; //600px

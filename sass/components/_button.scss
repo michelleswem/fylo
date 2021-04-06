@@ -1,0 +1,70 @@
+.btn { 
+    &,
+    &:link, 
+    &:visited {
+        text-decoration: none;
+        font-size:1.1rem;
+        display: inline-block;
+        padding:1.1rem 5rem;
+        border-radius: 100px;
+        cursor: pointer;
+        transition: all .2s;
+        position: relative;
+        border: none;
+        color:$color-white;
+        background-color:$color-button;
+    }
+    &:hover {
+       transform: translateY(-3px);
+    }
+    &:active,
+    &:focus{
+        outline: none;
+        transform: translateY(-1px);
+    }
+    &::after {
+        content: "";
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+    &::after {
+        background-color:$color-button;
+    }
+    &:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+    }
+}
+.btn-text{
+&:link,
+&:visited{
+    font-size: 1.6rem;
+    color:$color-button;
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 1px solid $color-button;
+    padding:3px;
+    transition: all .2s;
+}
+&:hover {
+    background-color: $color-button;
+    color:$color-white;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .15);
+    transform: translateY(-2px);
+}
+
+&:active {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    transform: translateY(0);
+}
+}
+ 
+    
+
