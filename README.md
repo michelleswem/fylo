@@ -8,6 +8,8 @@ To dive deeper, I suggest checking out Resources by [Rachel Andrew](https://twit
 
 This project is open to contributions!
 
+## LIVE PREVIEW
+### https://fylo-landing-page-web.netlify.app/
 
 ## Design
 This design Inspiration was derived from the images below for both Desktop and mobile devices.
